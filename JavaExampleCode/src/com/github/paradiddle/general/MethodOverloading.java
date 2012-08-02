@@ -18,7 +18,7 @@ public class MethodOverloading
 	private int addThings(int x, int y, int z)
 	{
 		System.out.println("Inside the three parameter version of 'addThings'.");
-		int sum = x + y + z;
+		int sum = addThings(x, y) + z;
 		return sum;
 	}
 	
